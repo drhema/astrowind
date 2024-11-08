@@ -10,7 +10,7 @@ tags:
   - Content Optimization
   - OnPage.ai
 metadata:
-  canonical: https://onpage.ai/blog/chrome-extension-guide/
+  canonical: https://onpage.ai/chrome-extension-guide/
 ---
 
 In today's digital landscape, having the right SEO tools can make all the difference in your content strategy. The OnPage.ai Chrome extension is an all-in-one SEO powerhouse that's revolutionizing how we approach on-page optimization, content organization, and topic research. Let's dive deep into its four game-changing features and learn how to leverage them effectively.

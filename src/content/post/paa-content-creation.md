@@ -10,7 +10,7 @@ tags:
   - Content Marketing
   - Onpage.ai
 metadata:
-  canonical: "https://onpage.ai/blog/paa-content-creation/"
+  canonical: "https://onpage.ai/paa-content-creation/"
 ---
 
 

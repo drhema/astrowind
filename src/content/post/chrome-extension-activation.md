@@ -10,7 +10,7 @@ tags:
   - Chrome Extension
   - OnPage.ai
 metadata:
-  canonical: "https://onpage.ai/blog/chrome-extension-activation/"
+  canonical: "https://onpage.ai/chrome-extension-activation/"
 ---
 
 Are you ready to supercharge your SEO efforts with OnPage.ai? This comprehensive guide will walk you through the activation process for the OnPage.ai Chrome extension, ensuring you can access all its premium features and maximize your SEO potential.
