@@ -13,40 +13,79 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Onpage AI SEO Chrome Extension - Former SimilarContent',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
+<!-- WebApplication Schema Embedded ******************* -->
+<div itemscope itemtype="https://schema.org/WebApplication">
+  <meta itemprop="name" content="Onpage.ai SEO Chrome Extension" />
+  <meta itemprop="installUrl" content="https://chromewebstore.google.com/detail/onpageai-seo-content-mana/ipeelalodbhkaoplodaaffepgaodpidh" />
+  <meta itemprop="applicationCategory" content="SEO" />
+  <meta itemprop="description" content="Onpage.ai is a Chrome extension designed for SEO content creation and competitive analysis." />
+  <meta itemprop="browserRequirements" content="Google Chrome" />
+  
+  <!-- Screenshot of the application -->
+  <meta itemprop="screenshot" content="https://lh3.googleusercontent.com/l5zUwNmT8rIXRhqd8-ypIvtbpcp-1IHDYacJMZfqZSwCIw_yoRNL7Qb38GtdIMgHwU68u3azDSUjbcP_VNifc9aqhg=s1280-w1280-h800" />
+  
+  <!-- Features list -->
+  <meta itemprop="featureList" content="On-Page SEO Analysis, PAA Content Tool, Webdraft Tool, Topic Clustering & Modeling" />
+
+  <!-- Price information -->
+  <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+    <meta itemprop="price" content="0.00" />
+    <meta itemprop="priceCurrency" content="USD" />
+  </div>
+
+  <!-- Aggregate Rating -->
+  <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+    <meta itemprop="ratingValue" content="4.7" />
+    <meta itemprop="bestRating" content="5" />
+  </div>
+
+  <!-- Target Audience -->
+  <div itemprop="audience" itemscope itemtype="https://schema.org/BusinessAudience">
+    <meta itemprop="audienceType" content="Small businesses" />
+  </div>
+
+  <!-- Creator Information -->
+  <div itemprop="creator" itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="Mu3lnen LLC" />
+  </div>
+
+  <!-- Additional Details -->
+  <div itemprop="about" itemscope itemtype="https://schema.org/Thing">
+    <meta itemprop="name" content="SEO Content Creation, Competitive Analysis" />
+  </div>
+</div>
   <!-- Hero Widget ******************* -->
 
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Add to Chrome',
+        href: 'https://chromewebstore.google.com/detail/onpageai-seo-content-mana/ipeelalodbhkaoplodaaffepgaodpidh',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Get a Pro License', href: '/pricing/' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/onpage-ai-infographic-fixed.png', alt: 'Onpage.ai more info' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Onpage.ai <span class="hidden xl:inline">SEO Chrome Extension for </span>
+<span class="text-accent dark:text-white highlight">SEO Content Creation</span> & Competitive Analysis.
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">Onpage.ai</span> is a free, AI-powered, and production-ready Chrome extension for SEO analysis and content creation.</span
+>
+<span class="block mb-1 sm:hidden font-bold text-blue-600">Onpage.ai: Transform your SEO strategy.</span>
+Ideal for Digital Marketers, SEO Specialists, Content Creators, Bloggers, and E-commerce Sites.
     </Fragment>
   </Hero>
 
@@ -59,44 +98,32 @@ const metadata = {
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="The All-in-One SEO Toolkit Features"
+    subtitle="What You Get with OnPage.ai Harness the power of our advanced SEO tools, designed to provide a comprehensive SEO solution in a single, easy-to-use extension."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'On-Page SEO Analysis',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Analyze critical SEO metrics, including Page Title, Meta Description, Headings, Text/HTML Ratio, Images and Links Count, and Keyword Density. Gain insights on any webpage and save reports as HTML files for future reference.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Webdraft Tool',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Quickly gather and organize content snippets from across the web. Perfect for content curation and aggregation, similar to Google Keep or Microsoft OneNote.',
+        icon: 'tabler:world-www',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'PAA Content Tool',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Extract Google’s "People Also Ask" questions and answers to fuel content ideation, keyword targeting, and snippet optimization. Rewrite content and generate unique PAA-based content to match user intent and boost SEO rankings.',
+        icon: 'tabler:question-mark',
+      },
+      {
+        title: 'Topic Clustering & Modeling',
+        description:
+          'Visualize SEO strategies with AI-generated topic clusters in mindmap format. Analyze top search results to see key subtopics covered by competitors, enhancing your keyword strategy, SEO alignment, and mobile optimization.',
+        icon: 'tabler:list-check',
       },
     ]}
   />
@@ -105,23 +132,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Inside Onpage.ai Extension"
+    title="From Vision to Execution: Craft Your Competitive Edge!"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Gain a Competitive Edge in Content Strategy',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Leverage industry-leading features to compile and structure content quickly, giving you a complete view on any topic and a head start in content creation.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Optimized for High Performance and User-Friendliness',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Leverage industry-leading features to compile and structure content quickly, giving you a complete view on any topic and a head start in content creation.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Streamlined for Rapid Note-Taking and Organizing',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'The Webdraft Tool’s interface is designed to be intuitive and fast, allowing users to capture, annotate, and categorize content instantly.',
       },
     ]}
     image={{
@@ -130,8 +157,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Flexible Content Management</h3>
+      Tailor OnPage.ai to fit your unique SEO needs, saving time while boosting your digital presence.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,23 +172,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Build Authority with Strategic Topic Clustering',
+        description: `The Topic Clustering Tool empowers your SEO by structuring content around key themes, helping to establish your site as an authoritative resource in your niche.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Tailored Topic Modeling',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Leverage AI-driven topic clusters that align with your brand’s focus, saving time and ensuring your content stands out while meeting SEO best practices.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Flexible Content Organization',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Create structured topic clusters that enhance user engagement and improve navigation, helping visitors easily explore related content.",
       },
       {
-        title: 'Integration of media',
+        title: 'In-depth Analysis and Visualization',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Visualize content gaps and competitive insights with mindmap views, providing an organized structure for multimedia elements and enriched content that appeals to both users and search engines.',
       },
     ]}
     image={{
@@ -169,7 +196,7 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Organize Your Content for Maximum SEO Impact.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,23 +210,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Boost Your SEO with Targeted Content',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'The PAA Content Tool helps you align your content with user intent by directly pulling “People Also Ask” questions and answers from Google, giving you immediate insights into what your audience wants to know.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Customizable Content Generation',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Rewrite and transform PAA data into unique, optimized content. Tailor it to match your brand’s voice and style, saving time while making your content more engaging and relevant.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Content Structuring Options',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Use PAA questions to create structured, informative layouts that enhance user engagement. Integrate these questions as subheadings or supporting sections, providing a rich experience for your audience.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Responsive for High SEO Impact',
+        description: `The PAA Content Tool ensures your SEO efforts are effective across all devices, maximizing visibility and delivering consistent performance for mobile and desktop users alike.`,
       },
     ]}
     image={{
@@ -207,7 +234,7 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Empower Your Content Strategy with User-Centric Insights.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,24 +244,24 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Create SEO-Driven Content with OnPage.ai in Just a Few Steps."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Capture and Organize Ideas</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Use the Webdraft Tool to clip and organize content snippets, notes, and ideas from across the web. Create a well-rounded view of your target topic, ideal for content curation and planning.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Generate PAA-Based Content</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Scrape “People Also Ask” (PAA) questions from Google using the PAA Content Tool. Rewrite and customize these insights to target long-tail keywords, enrich your content, and match user search intent.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Build Topic Clusters</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Visualize and organize content into clusters using the Topic Clustering Tool. Generate a mindmap of related topics, helping you structure content around key themes for stronger SEO impact.',
         icon: 'tabler:paint',
       },
       {
@@ -248,77 +275,11 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    information={`The blog serves as a hub for OnPage.ai resources and guides. Each article is designed to enhance your expertise in SEO and content optimization, helping you make the most of OnPage.ai’s powerful tools. Stay tuned for insights, tips, and best practices to elevate your SEO strategy.
                 `}
   />
 
@@ -331,46 +292,102 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Was OnPage.ai previously known as SimilarContent.com, and can old AppSumo LTD customers still use the new extension?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Absolutely yes! Previous LTD customers from AppSumo still have full access to OnPage.ai. Plus, as a thank you for your loyalty, we’ve sent an extra gift to your email. If you’ve been an AppSumo client since 2020, please check your inbox to find our special offer!",
       },
       {
-        title: 'What do I need to start?',
+        title: 'What is OnPage.ai, and how can it help my SEO?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'OnPage.ai is a comprehensive Chrome extension designed to simplify SEO analysis, content curation, and topic clustering. It helps you understand competitor strategies, optimize on-page elements, and create content that aligns with user search intent.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Do I need any special requirements to install OnPage.ai?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Yes, to fully utilize OnPage.ai, you'll need: A licensed email associated with your OnPage.ai account, An OpenAI API key for AI-driven features, Access to our server developer API. Once set up, you can perform unlimited analyses, topic clustering, and PAA content generation using the extension.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "How many devices can I use the OnPage.ai extension on?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "The number of devices depends on the license you purchase. Each license allows usage on anywhere from 1 to 5 devices. Choose the plan that best suits your needs.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Where is the SEO analysis data saved when I use the OnPage.ai extension?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "All data is saved in your local storage, and we have no access to your information. Your API keys are securely stored and used locally within the extension, ensuring that no data is shared or revealed to any third party.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'What kind of support is available if I need help?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "You can reach out to us in several ways: Facebook Group: Join our community at fb.com/groups/onpage for support and tips, YouTube Channel: Watch tutorials and get updates at youtube.com/onpageai, Email: Contact us directly at support [at] onpage.ai for personalized assistance. We’re here to help you make the most of OnPage.ai!",
       },
     ]}
   />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was OnPage.ai previously known as SimilarContent.com, and can old AppSumo LTD customers still use the new extension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely yes! Previous LTD customers from AppSumo still have full access to OnPage.ai. Plus, as a thank you for your loyalty, we’ve sent an extra gift to your email. If you’ve been an AppSumo client since 2020, please check your inbox to find our special offer!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is OnPage.ai, and how can it help my SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OnPage.ai is a comprehensive Chrome extension designed to simplify SEO analysis, content curation, and topic clustering. It helps you understand competitor strategies, optimize on-page elements, and create content that aligns with user search intent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any special requirements to install OnPage.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, to fully utilize OnPage.ai, you'll need: A licensed email associated with your OnPage.ai account, An OpenAI API key for AI-driven features, Access to our server developer API. Once set up, you can perform unlimited analyses, topic clustering, and PAA content generation using the extension."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many devices can I use the OnPage.ai extension on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The number of devices depends on the license you purchase. Each license allows usage on anywhere from 1 to 5 devices. Choose the plan that best suits your needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the SEO analysis data saved when I use the OnPage.ai extension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All data is saved in your local storage, and we have no access to your information. Your API keys are securely stored and used locally within the extension, ensuring that no data is shared or revealed to any third party."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of support is available if I need help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can reach out to us in several ways: Facebook Group: Join our community at fb.com/groups/onpage for support and tips, YouTube Channel: Watch tutorials and get updates at youtube.com/onpageai, Email: Contact us directly at support [at] onpage.ai for personalized assistance. We’re here to help you make the most of OnPage.ai!"
+      }
+    }
+  ]
+}
+</script>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'SEO Analyses Conducted', amount: '7K+' },
+      { title: 'Keywords Optimized', amount: '24.8K' },
+      { title: 'PAA Questions Collected', amount: '10.3K' },
+      { title: 'Global Users', amount: '3K' },
     ]}
   />
 
@@ -380,20 +397,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Add to Chrome',
+        href: 'https://chromewebstore.google.com/detail/onpageai-seo-content-mana/ipeelalodbhkaoplodaaffepgaodpidh',
         target: '_blank',
         icon: 'tabler:download',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Onpage.AI&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Chrome Extension</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Join thousands of users who trust OnPage.ai to enhance their SEO strategy and boost their online presence. Don’t miss out on the tools that can make a real difference in your content’s performance! :P
     </Fragment>
   </CallToAction>
 </Layout>

@@ -14,37 +14,28 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
-
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Plans Tailored for Every Need"
+    subtitle="Choose the plan that best suits your SEO goals and content needs."
   />
 
   <!-- Pricing Widget ******************* -->
-
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Our Pricing Plans"
+    subtitle="Select the plan that fits your requirements and budget"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'Free Trial Plan',
+        subtitle: 'Start with essential tools for free',
+        price: '0',  // Setting price to '0' to indicate free
+        period: 'forever',
         items: [
-          {
-            description: 'Etiam in libero, et volutpat',
-          },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
-          },
+          { description: 'PAA Scraper Tool' },
+          { description: 'Webdraft Tool (No AI Rewriting)' },
+          { description: 'On-Page SEO Analysis Tool' },
+          { description: 'No registration required' },
+          { description: 'No AI Tools' },
         ],
         callToAction: {
           target: '_blank',
@@ -53,26 +44,19 @@ const metadata = {
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'Standard Plan',
+        subtitle: 'Ideal for individuals and small businesses',
+        price: 49,
+        period: 'Per Year',
         items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
+          { description: 'PAA Scraper Tool' },
+          { description: 'Webdraft Tool with AI Rewriting' },
+          { description: 'On-Page SEO Analysis Tool' },
+          { description: 'Topic Clustering Tool' },
+          { description: 'AI Rewriting' },
+          { description: 'Priority Support' },
+          { description: '1 Chrome Browser Access' },
+          { description: 'Use Your Own OpenAI API Key' },
         ],
         callToAction: {
           target: '_blank',
@@ -80,26 +64,22 @@ const metadata = {
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Pro Plan',
+        subtitle: 'Perfect for professionals needing multi-device access',
+        price: 74,
+        period: 'Per Year',
         items: [
-          {
-            description: 'Curabitur suscipit risus',
-          },
-          {
-            description: 'Aliquam habitasse malesuada',
-          },
-          {
-            description: 'Suspendisse sit amet blandit',
-          },
-          {
-            description: 'Suspendisse auctor blandit dui',
-          },
+          { description: 'PAA Scraper Tool' },
+          { description: 'Webdraft Tool with AI Rewriting' },
+          { description: 'On-Page SEO Analysis Tool' },
+          { description: 'Topic Clustering Tool' },
+          { description: 'AI Rewriting' },
+          { description: 'Priority Support' },
+          { description: '3 Chrome Browser Access' },
+          { description: 'Use Your Own OpenAI API Key' },
         ],
         callToAction: {
           target: '_blank',
@@ -110,82 +90,55 @@ const metadata = {
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
-
+  <!-- Features3 Widget **************** -->
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Why Choose OnPage.ai?"
+    subtitle="Discover the benefits of each plan"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Flexible Plans',
+        description: 'Three tiers designed to cater to different needs, from beginners to advanced SEO professionals.',
+        icon: 'tabler:adjustments',
       },
       {
         title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        description: 'No hidden fees—each plan includes clearly listed features and benefits.',
+        icon: 'tabler:eye',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Secure Payment',
+        description: 'Your payments are processed through secure gateways to protect your financial data.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: 'Immediate Access',
+        description: 'Instant access to your plan’s tools and features as soon as you subscribe.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
+        title: 'Upgrade as Needed',
+        description: 'Easily switch to a higher plan to unlock additional features as your needs grow.',
         icon: 'tabler:chevrons-up',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Priority Support',
+        description: 'Get help from our support team faster with priority support for Standard and Pro plans.',
         icon: 'tabler:headset',
       },
     ]}
-    classes={{ container: 'max-w-5xl' }}
   />
 
   <!-- Steps Widget ****************** -->
-
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="How to Subscribe"
+    tagline="Simple and straightforward"
     isReversed={true}
     items={[
-      {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
-      },
+      { title: 'Select Your Plan', icon: 'tabler:number-1' },
+      { title: 'Create an Account', icon: 'tabler:number-2' },
+      { title: 'Enter Payment Details', icon: 'tabler:number-3' },
+      { title: 'Enjoy OnPage.ai', icon: 'tabler:number-4' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
@@ -194,45 +147,38 @@ const metadata = {
   />
 
   <!-- FAQs Widget ******************* -->
-
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Common questions about our plans and pricing"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
-        description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+        title: 'Does each plan include customer support?',
+        description: 'Yes, all plans include support. Standard and Pro plans receive priority support for faster assistance.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+        title: 'Is there a trial period?',
+        description: 'We do not offer a trial period, but our Free Plan allows you to experience key tools without registration.',
       },
       {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+        title: 'Can I switch plans at any time?',
+        description: 'Absolutely! You can upgrade to a higher plan whenever you need more features.',
       },
       {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+        title: 'What payment methods are accepted?',
+        description: 'We accept major credit cards and other online payment options for secure and convenient transactions.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+        title: 'Are there any additional fees?',
+        description: 'No, the listed price covers all features in each plan. There are no hidden fees.',
       },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to Optimize Your SEO?"
+    subtitle="Join OnPage.ai and access powerful SEO tools to elevate your content performance."
     actions={[
       {
         variant: 'primary',
